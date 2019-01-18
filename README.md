@@ -26,7 +26,7 @@ Transfer Chinese to Pinyin with first letter
 
 Transfer Chinese to Pinyin with full letter
 
-`C2Pin.firstChar()`
+`C2Pin.fullChar()`
 
 
 # Namespace conflicts
