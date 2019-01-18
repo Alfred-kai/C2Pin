@@ -1,0 +1,22 @@
+{
+  "name": "c2pin",
+  "version": "1.0.0",
+  "description": "JS将中文转化为拼音首字母字符串的小插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alfred-kai/C2Pin.git"
+  },
+  "keywords": [
+    "chinese"
+  ],
+  "author": "Alfred",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alfred-kai/C2Pin/issues"
+  },
+  "homepage": "https://github.com/Alfred-kai/C2Pin#readme"
+}
