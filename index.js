@@ -27,6 +27,7 @@
 				if (PinYin.hasOwnProperty(item)) {
 				  if (PinYin[item].indexOf(str[i]) > -1) {
 					firstStr += item.substring(0, 1)
+						break
 				  }
 				}
 			  }
@@ -40,9 +41,11 @@
 				var code = str.charCodeAt(i)
 				if (code >= 19968 && code <= 40869) {
 				  for (var item in PinYin) {
+					  console.log(item)
 					if (PinYin.hasOwnProperty(item)) {
 					  if (PinYin[item].indexOf(str[i]) > -1) {
 						fullStr += item
+							break
 					  }
 					}
 				  }
