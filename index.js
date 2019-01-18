@@ -27,6 +27,7 @@
 				if (PinYin.hasOwnProperty(item)) {
 				  if (PinYin[item].indexOf(str[i]) > -1) {
 					firstStr += item.substring(0, 1)
+						break
 				  }
 				}
 			  }
@@ -43,6 +44,7 @@
 					if (PinYin.hasOwnProperty(item)) {
 					  if (PinYin[item].indexOf(str[i]) > -1) {
 						fullStr += item
+							break
 					  }
 					}
 				  }
