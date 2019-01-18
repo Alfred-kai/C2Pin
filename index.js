@@ -18,7 +18,7 @@
 	}
 })(function(){
 	return {
-		start(str) {
+		firstChar(str) {
 		  var firstStr = ''
 		  for (var i = 0; i < str.length; i++) {
 			var code = str.charCodeAt(i)
@@ -33,6 +33,22 @@
 			}
 		  }
 		  return firstStr
+		},
+		fullChar(str){
+			var fullStr = ''
+			  for (var i = 0; i < str.length; i++) {
+				var code = str.charCodeAt(i)
+				if (code >= 19968 && code <= 40869) {
+				  for (var item in PinYin) {
+					if (PinYin.hasOwnProperty(item)) {
+					  if (PinYin[item].indexOf(str[i]) > -1) {
+						fullStr += item
+					  }
+					}
+				  }
+				}
+			  }
+			  return fullStr
 		}
 	}
 })
